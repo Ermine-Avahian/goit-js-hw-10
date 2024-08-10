@@ -58,15 +58,13 @@ button[data-start]:disabled {
   cursor: not-allowed;
 }
 
-/* Стили для контейнера таймера */
 .timer {
   display: flex;
   margin-top: 32px;
 }
 
-/* Стили для каждого блока с временем */
 .field {
-  margin-right: 24px; /* Отступы между блоками времени */
+  margin-right: 24px;
 }
 
 .field .value {
