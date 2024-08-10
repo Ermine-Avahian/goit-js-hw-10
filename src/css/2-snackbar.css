@@ -40,6 +40,12 @@ fieldset {
   box-sizing: border-box;
   display: flex;
   align-items: center;
+  padding: 0;
+}
+
+fieldset:hover,
+fieldset:active {
+  border: 1px solid #000;
 }
 
 legend {
@@ -58,18 +64,11 @@ legend {
   margin-bottom: 8px;
   font-size: 14px;
   color: #2e2f42;
-}
-
-label[for='fulfilled'] {
-  width: 104px;
-  margin-right: 48px;
-}
-
-label[for='rejected'] {
-  width: 112px;
+  flex-direction: row;
 }
 
 input[type='radio'] {
+  margin-left: 48px;
   margin-right: 8px;
 }
 
