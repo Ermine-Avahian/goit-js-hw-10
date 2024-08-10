@@ -36,7 +36,6 @@ fieldset {
   width: 360px;
   height: 64px;
   border-radius: 4px;
-  stroke-width: 1px;
   border: 1px solid #808080;
   box-sizing: border-box;
 }
@@ -57,6 +56,15 @@ label[for='rejected'] {
   margin-bottom: 8px;
   font-size: 14px;
   color: #2e2f42;
+}
+
+label[for='fulfilled'] {
+  width: 104px;
+  margin-right: 48px;
+}
+
+label[for='rejected'] {
+  width: 112px;
 }
 
 input[type='radio'] {
