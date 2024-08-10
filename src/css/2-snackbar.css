@@ -51,8 +51,7 @@ legend {
   margin-left: 28px;
 }
 
-label[for='fulfilled'],
-label[for='rejected'] {
+.radio-option {
   display: inline-flex;
   align-items: center;
   margin-bottom: 0;
