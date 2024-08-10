@@ -101,5 +101,4 @@ button[data-start]:disabled {
 .flatpickr-day.prevMonthDay,
 .flatpickr-day.nextMonthDay {
   color: #c1c1c1;
-  cursor: not-allowed;
 }
