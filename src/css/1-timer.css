@@ -1,27 +1,36 @@
+body {
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
 #datetime-picker {
-  border-radius: 8px;
+  border-radius: 4px;
   width: 272px;
   height: 40px;
+  background-color: #fff;
   border: 1px solid #808080;
+  margin-right: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: #2e2f42;
 }
 
 #datetime-picker:hover {
-  border-radius: 4px;
-  color: #000000;
-  border-color: #2e2f42;
+  border: 1px solid #000;
+  color: #2e2f42;
 }
 
 #datetime-picker:focus,
 #datetime-picker:active {
-  color: #000000;
-  border-color: #4e75ff;
+  border: 1px solid #4e75ff;
+  color: #000;
 }
 
 #datetime-picker:disabled {
+  border: 1px solid #808080;
   color: #808080;
-  border-color: #fafafa;
-  background-color: #f9f9f9;
 }
 
 button[data-start] {
@@ -32,6 +41,11 @@ button[data-start] {
   width: 75px;
   height: 40px;
   background-color: #4e75ff;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 
 button[data-start]:hover {
@@ -40,7 +54,35 @@ button[data-start]:hover {
 
 button[data-start]:disabled {
   background-color: #cfcfcf;
+  color: #989898;
   cursor: not-allowed;
+}
+
+/* Стили для контейнера таймера */
+.timer {
+  display: flex;
+  margin-top: 32px;
+}
+
+/* Стили для каждого блока с временем */
+.field {
+  margin-right: 24px; /* Отступы между блоками времени */
+}
+
+.field .value {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.field .label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2f42;
 }
 
 /* Flatpickr calendar styles */
@@ -57,4 +99,47 @@ button[data-start]:disabled {
   background-color: #3a6df0;
   color: #fff;
   border-radius: 50%;
+}
+
+.flatpickr-day.flatpickr-disabled,
+.flatpickr-day.prevMonthDay,
+.flatpickr-day.nextMonthDay {
+  background-color: #f9f9f9;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Кнопки навигации по месяцам */
+.flatpickr-prev-month,
+.flatpickr-next-month {
+  color: #3a6df0;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.flatpickr-prev-month:hover,
+.flatpickr-next-month:hover {
+  color: #3458d3;
+}
+
+/* Стили выбора времени */
+.flatpickr-time {
+  border-top: 1px solid #ddd;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+.flatpickr-time input {
+  width: 50px;
+  padding: 4px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.flatpickr-time input:focus {
+  border-color: #3a6df0;
+  box-shadow: 0 0 5px #3a6df0;
+  outline: none;
 }
